@@ -42,9 +42,17 @@ padding: 0 10px;
 }
 
 .promo-title{
-  font-size: 80px;
+  font-size: 10vh;
   font-weight: 600;
   margin-top: 100px;
+  line-height: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .promo-title {
+    font-size: 5vh;
+    line-height: 1;
+  }
 }
 
 .bottom-img{
@@ -353,4 +361,26 @@ transition: 0.5s;
     margin-right:0;
     font-weight:600
   }
+}
+
+
+
+/*Additional CSS*/
+
+.buttoncenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .buttoncenter {
+    margin-top: -50px;
+    margin-bottom: -100px;
+  }
+}
+
+a{
+  text-decoration: none;
 }
