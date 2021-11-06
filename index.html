@@ -1,386 +1,233 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-
-body{
-  font-family: sans-serif;
-}
-
-#nav-bar{
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-.navbar{
-  background-image: linear-gradient(to right, #020024, #096079);
-  padding: 0px !important;
-  justify-content: space-around;
-}
-
-.navbar-nav li{
-padding: 0 10px;
-}
-
-.navbar-nav li a{
-  color: #fff !important;
-  font-weight: 700;
-  float: left;
-  text-align: left;
-}
-
-.navbar-toggler{
-  outline: none !important;
-}
-
-/****BAnner Section***/
-
-#banner{
-  background-image: linear-gradient(to right, #020024, #096079 );
-  color: #fff;
-  padding-top: 5%;
-}
-
-.promo-title{
-  font-size: 10vh;
-  font-weight: 600;
-  margin-top: 100px;
-  line-height: 1;
-}
-
-@media only screen and (max-width: 600px) {
-  .promo-title {
-    font-size: 5vh;
-    line-height: 1;
-  }
-}
-
-.bottom-img{
-  width: 100%;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="Home.css">
+  <title>SG Home Renovations</title>
+</head>
+<body>
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus">Why chose us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#testimonials">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
 
-/*Services*/
-#services{
- padding: 80px 0;
-}
-.service-img{
-  width: 150px;
-  margin-top: 20px;
-}
-
-.services{
-  padding: 20px;
-}
-
-.services h4{
-  padding: 5px;
-  margin-top: 25px;
-  text-transform: uppercase;
- 
-}
-
-.title::before{
- 
-  content:'';
-  background:#096079;
-  height: 5px;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  transform: translateY(63px);
-
-}
+  </section>
 
 
-.title::after{
- 
-  content:'';
-  background:#096079;
-  height: 10px;
-  width: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
-  display: block;
-  transform: translateY(8px);
+  <!------------------------------Bannar Section---------------------------------->
+  <section id="banner">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <p class="promo-title">Best Engineers in the field</p>
+      <p>Contact is on any Engineering assistance</p>
+    </div>
+    <div class="col-md-6">
+      <img src="images/SSl.png" class="img-fluid">
+    </div>
+  </div>
 
-}
+</div>
 
-#services .btn-primary{
-  box-shadow: none;
-  padding: 8px 25px;
-  border:none;
-  border-radius: 20px;
-  background-image: linear-gradient(to right, #020024, #096079 );
-  text-align: center;
-}
-
-/*About Us section*/
-
-#aboutus{
-
-  background: #f8f9fa;
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-
-.about-title{
-  font-size: 40px;
-  font-weight: 600px;
-  margin-top: 8%;
-}
-
-#aboutus ul li{
-margin:10px 0;
-}
-
-#aboutus ul{
-  margin-left: 30px;
-}
+<img src="images/wave (21).svg" class="bottom-img">
+  </section>
 
 
-/*Testimonials*/
+  <!-----Services Section---- -->
+<section id="services">
+  <div class="container">
+    <h1 class="title text-center">What we do?</h1>
+  <div class="row text-center">
+    <div class="col-md-4">
+      <img src="images/home.png" class="service-img">
+<h4>Home Renovation</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in bibendum arcu, eget auctor ipsum. Etiam convallis mauris eget nisl ultrices posuere. Nulla lectus massa, fermentum eget sem quis, mattis pharetra ipsum. Duis erat ex, blandit id turpis ac, gravida condimentum risus. Integer in varius quam, eu elementum tortor. Fusce neque sapien, auctor at nisl in,
+   bibendum placerat metus. In vel commodo enim. Donec ac quam bibendum, fermentum lectus ac, accumsan neque</p>
+    </div>
 
-#testimonials{
-  margin:100px 0;
+    <div class="col-md-4">
+      <img src="images/home.png" class="service-img">
+<h4>Construction and Ceiling</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in bibendum arcu, eget auctor ipsum. Etiam convallis mauris eget nisl ultrices posuere. Nulla lectus massa, fermentum eget sem quis, mattis pharetra ipsum. Duis erat ex, blandit id turpis ac, gravida condimentum risus. Integer in varius quam, eu elementum tortor. Fusce neque sapien, auctor at nisl in,
+   bibendum placerat metus. In vel commodo enim. Donec ac quam bibendum, fermentum lectus ac, accumsan neque</p>
+    </div>
 
-}
+    <div class="col-md-4">
+      <img src="images/home.png" class="service-img">
+<h4>All kinds of plumming work</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in bibendum arcu, eget auctor ipsum. Etiam convallis mauris eget nisl ultrices posuere. Nulla lectus massa, fermentum eget sem quis, mattis pharetra ipsum. Duis erat ex, blandit id turpis ac, gravida condimentum risus. Integer in varius quam, eu elementum tortor. Fusce neque sapien, auctor at nisl in,
+   bibendum placerat metus. In vel commodo enim. Donec ac quam bibendum, fermentum lectus ac, accumsan neque</p>
+    </div>
 
-.testimonials{
-  border-left: 4px solid #096079;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
+  </div>
+  <div class="buttoncenter">
+  <button type="button" class="btn btn-primary"> All Services</button>
+  </div></div>
 
-.testimonials img{
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  margin: 0 10px;
-}
+</section>
 
-.testimonials a:hover img{
-  transform: translateY(-10px);
-}
+<!------------------------------------------------------About US----------------------------------------------------------->
 
-.user-details{
-  display: inline-block;
-  font-size: 22px;
-}
+<section id="aboutus">
+  <div class="container">
+    <h1 class="title text-center">Why Choose us?</h1>
+    <div class="row">
+      <div class="col-md-6 about-us">
 
-/*Social Media*/
+        <p class="about-title">Why chose us?</p>
 
+        <ul>
+          <li>Lowest Pricing</li>
+          <li>Years of Experience</li>
+          <li>Guarantee the quality</li>
+          <li>Experts Only</li>
+          <li>Meeting Deadlines</li>
+          <li>Creative and innovative solutions</li>
+          <li>Top technological tools</li>
+          <li>Flexibility for effctive and efficient execution</li>
+          <li>Trasparency and ease of work</li>
+          <li>Focus on results</li>
+          <li>Guarantee the quality</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <img src="images/home.png " class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
 
-#social-Media{
-  background: #f8f9fa;
-  padding: 100px 0;
-}
+<!------------------------------------------------Testimonials------------------------------------->
 
-#social-Media p{
-  font-size: 36px;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
+<section id="testimonials">
+  <div class="container">
+    <h1 class="title text-center"> OUR TEAM</h1>
+    <div class="row offset-1">
+      <div class="col-md-5 testimonials">
+        <p>testimonial lorem sdjjvdjkdvjqvjvbkdjjabvjkavbaka
+          vnwfjrwvbwrvnbfvjnbwfvbfjbfjk l nvjadnon ljf
+          rbwkjbbwjrknvrnlnrljnjk kjc jkvwfvjkwnvjngjwrngkwjrgwj
+        </p>
+        <img src="images/t2.jpg">
+        <p class="user-details"><b>Anjana</b> <br>Co-Founder</p><br></p>
 
-.social-icons img{
-width: 60px;
-transition: 0.5s;
-}
-.social-icons a:hover img{
-   transform: translateY(-10px);
-}
+      </div>
 
-/*Footer*/
+      <div class="col-md-5 testimonials">
+        <p>testimonial lorem sdjjvdjkdvjqvjvbkdjjabvjkavbaka
+          vnwfjrwvbwrvnbfvjnbwfvbfjbfjk l nvjadnon ljf
+          rbwkjbbwjrknvrnlnrljnjk kjc jkvwfvjkwnvjngjwrngkwjrgwj
+        </p>
+        <img src="images/t2.jpg">
+        <p class="user-details"><b>Biral</b> <br>Co-Founder</p><br></p>
 
-#footer{
-  background-image: linear-gradient(to right, #020024, #096079 );
-  color: #fff;
-}
+      </div>
 
-.site-footer
-{
-  background-image: linear-gradient(to right, #020024, #096079 );
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
-  color:#737373;
-}
-.site-footer hr
-{
-  border-top-color:#bbb;
-  opacity:0.5
-}
-.site-footer hr.small
-{
-  margin:20px 0
-}
-.site-footer h6
-{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-}
-.site-footer a
-{
-  color:#737373;
-}
-.site-footer a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links
-{
-  padding-left:0;
-  list-style:none
-}
-.footer-links li
-{
-  display:block
-}
-.footer-links a
-{
-  color:#737373
-}
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links.inline li
-{
-  display:inline-block
-}
-.site-footer .social-icons
-{
-  text-align:right
-}
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#33353d
-}
-.copyright-text
-{
-  margin:0
-}
-@media (max-width:991px)
-{
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
-  }
-}
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
-}
-.social-icons
-{
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
-}
-.social-icons li
-{
-  display:inline-block;
-  margin-bottom:4px
-}
-.social-icons li.title
-{
-  margin-right:15px;
-  text-transform:uppercase;
-  color:#96a2b2;
-  font-weight:700;
-  font-size:13px
-}
-.social-icons a{
-  background-color:#eceeef;
-  color:#818a91;
-  font-size:16px;
-  display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
-  text-align:center;
-  margin-right:8px;
-  border-radius:100%;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
-  transition:all .2s linear
-}
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
-{
-  color:#fff;
-  background-color:#29aafe
-}
-.social-icons.size-sm a
-{
-  line-height:34px;
-  height:34px;
-  width:34px;
-  font-size:14px
-}
-.social-icons a.facebook:hover
-{
-  background-color:#3b5998
-}
-.social-icons a.twitter:hover
-{
-  background-color:#00aced
-}
-.social-icons a.linkedin:hover
-{
-  background-color:#007bb6
-}
-.social-icons a.dribbble:hover
-{
-  background-color:#ea4c89
-}
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
-  }
-}
+    </div>
+  </div>
+</section>
+<!------------------------------------Social Media Section------------------------------------>
+
+<section id="social-Media">
+<div class="container text-center">
+  <p>Find Us On</p>
+  <div class="social-icons">
+     <a href="#"><img src="images/facebook.png"></a>
+     <a href="#"><img src="images/instagram.png"></a>
+     <a href="#"><img src="images/linkedin.png"></a>
+     <a href="#"><img src="images/whatsapp.png"></a>
+    </div>
+</div>
+</section>
+
+<!-------------------------------Footer Section---------------------------------------------->
+
+<section id="footer">
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links" style="">
+            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text" style="color: azure;">Copyright &copy; 2021 All Rights Reserved 
+       
+          </p>
+        </div>
+
+        <!-- <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div> -->
+      </div>
+    </div>
+</footer>
+</section>
+ <script src="Home.Js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
 
 
-
-/*Additional CSS*/
-
-.buttoncenter{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-}
-
-@media only screen and (max-width: 600px) {
-  .buttoncenter {
-    margin-top: -50px;
-    margin-bottom: -100px;
-  }
-}
-
-a{
-  text-decoration: none;
-}
+</body>
+</html>
